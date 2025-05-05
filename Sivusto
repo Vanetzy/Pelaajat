@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PELAAJAT - Pelaamisen liittyvä sivusto</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7fc;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 2em;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: relative;
+      z-index: 2;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      font-weight: normal;
+    }
+    .parallax {
+      background-image: url('https://via.placeholder.com/1200x800'); /* Lisää oma taustakuva */
+      min-height: 400px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      z-index: 1;
+    }
+    main {
+      padding: 40px 20px;
+      text-align: center;
+      z-index: 2;
+    }
+    h2 {
+      color: #4CAF50;
+      font-size: 1.5em;
+    }
+    .discord-button {
+      background-color: #7289da;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+    .discord-button:hover {
+      background-color: #5d6fa1;
+    }
+    .content, .events, .announcement {
+      background-color: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+      text-align: left;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 2;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #f4f4f4;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      font-size: 0.9em;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .cta {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      border-radius: 5px;
+      font-size: 1.2em;
+      margin-top: 40px;
+      cursor: pointer;
+    }
+    .cta:hover {
+      background-color: #45a049;
+    }
+    @media (max-width: 768px) {
+      header {
+        font-size: 1.5em;
+      }
+      main {
+        padding: 20px;
+      }
+      .discord-button {
+        font-size: 1em;
+        padding: 12px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PELAAJAT - Pelaamisen liittyvä sivusto</h1>
+    <p>Kovin pieni yhteisö, joka nousee</p>
+  </header>
+
+  <div class="parallax"></div>
+
+  <main>
+    <h2>Liity meidän Discord-kanavalle ja osallistu yhteisöömme!</h2>
+    <a href="https://discord.gg/sinun-kanavasi" class="discord-button" target="_blank">Liity Discordiin</a>
+
+    <div class="content">
+      <h3>Uusimmat pelit ja vinkit</h3>
+      <p>Meiltä löydät tietoa uusimmista peleistä, pelivälineistä ja pelaamiseen liittyvistä uutisista. Tutustu myös yhteisömme suosikkeihin ja parhaisiin pelivinkkeihin!</p>
+      <ul>
+        <li>Viimeisimmät pelijulkaisut ja arvostelut</li>
+        <li>Pelistrategiat ja vinkit</li>
+        <li>Yhteisön suosittelemat pelit</li>
+        <li>Pelikaupat ja tarjoukset</li>
+      </ul>
+    </div>
+
+    <div class="events">
+      <h3>Tulevat pelitapahtumat</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Päivämäärä</th>
+            <th>Tapahtuma</th>
+            <th>Sijainti</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10.5.2025</td>
+            <td>Online FPS-turnaus</td>
+            <td>Verkossa</td>
+          </tr>
+          <tr>
+            <td>15.5.2025</td>
+            <td>Pelitapahtuma: GameExpo</td>
+            <td>Helsinki</td>
+          </tr>
+          <tr>
+            <td>20.5.2025</td>
+            <td>Indie-pelikehittäjien ilta</td>
+            <td>Tampere</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="announcement">
+      <h3>Viimeisimmät tiedotteet</h3>
+      <p><strong>Uusi e-urheilusarja alkaa kesäkuussa!</strong> Ilmoittautuminen on nyt auki. Osallistujille luvassa palkintoja ja näkyvyyttä.</p>
+      <p><strong>Kiitos osallistujille kevään pelimaratonista!</strong> Tapahtuma keräsi yli 500 osallistujaa ja tuhansia katsojia.</p>
+    </div>
+
+    <div class="cta">
+      <p>Älä jää paitsi parhaista tapahtumista ja uutisista! Liity mukaan ja ole osa yhteisöämme!</p>
+    </div>
+
+  </main>
+  <footer>
+    &copy; 2025 PELAAJAT | Osoite: www.pelaajat.fi
+  </footer>
+</body>
+</html>
